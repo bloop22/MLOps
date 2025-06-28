@@ -36,6 +36,6 @@ jobs:
         REPO_TOKEN: ${{secrets.GITHUB_TOKEN}}
       run: |
         echo "test output" > report.md
-        cat test.py >>report.md
+        cat "Week 2/test.py" >>report.md
         cml comment create --publish report.md
         
